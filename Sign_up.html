@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Design and develop a SignUp page using HTML and CSS. The login page should have a visually appealing
+layout as shown in the below image -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1f1f1f;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+      .container {
+        background-color: #fff;
+        width: 400px;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      input,
+      label {
+        color: black;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+      .form-group select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+      .form-group input[type="submit"] {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .form-group input[type="submit"]:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Signup</h1>
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="batch">Batch:</label>
+          <select id="batch" name="batch" required>
+            <option value="sigma1">Sigma 1.0</option>
+            <option value="sigma2">Sigma 2.0</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Signup" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
